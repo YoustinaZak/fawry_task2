@@ -1,3 +1,3 @@
 interface BookFactory{
-    Book createBook();
+    public Book createBook(String title, String author, String publisher, String ISBN);
 }

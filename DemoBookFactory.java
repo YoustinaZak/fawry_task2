@@ -1,5 +1,6 @@
 public class DemoBookFactory implements BookFactory {
-    public Book createBook(){
-        return new ConcreteDemoBook();
+    @Override
+    public Book createBook(String title, String author, String publisher, String ISBN){
+        return new ConcreteDemoBook(title,author,publisher,ISBN);
     }
 }

@@ -1,5 +1,6 @@
 public class EBookFactory implements BookFactory{
-    public Book createBook(){
-        return new EBookFactory();
+    @Override
+    public Book createBook(String title, String author, String publisher, String ISBN){
+        return new ConcreteEBook(title,author,publisher,ISBN);
     }
 }
