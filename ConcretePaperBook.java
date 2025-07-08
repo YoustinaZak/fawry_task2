@@ -6,7 +6,6 @@ public class ConcretePaperBook extends Book implements Shippable {
 
     ConcretePaperBook(String title, String author, String publisher, String ISBN){
         super(title, author, publisher,ISBN);
-        this.stock= stock;
     }
     void setPrice (int price){
         this.price=price;
@@ -20,5 +19,6 @@ public class ConcretePaperBook extends Book implements Shippable {
     @Override
     public void shipTo (String address){
         //sent to shipping service
+        System.out.println("Shipping...");
     }
 }

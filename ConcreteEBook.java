@@ -18,5 +18,6 @@ public class ConcreteEBook extends Book implements Emailable {
     @Override
     public void sendTo (String email){
         //sent to Mailing service
+        System.out.println("Mailing...");
     }
 }
