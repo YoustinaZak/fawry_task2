@@ -1,3 +1,3 @@
 interface BookFactory{
-    
+    Book createBook();
 }
